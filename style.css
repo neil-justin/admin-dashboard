@@ -6,11 +6,25 @@
     box-sizing: border-box;
 }
 
+:root {
+    --secondary-color: #1992d4;
+}
+
+.icon {
+    width: 28px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 3.5fr;
-    grid-template-rows: 1fr 3.5fr;
+    grid-template-columns: minmax(250px, 1fr) 3.5fr;
+    grid-template-rows: 3.5fr;
     grid-template-areas: 'sidebar header'
         'sidebar main-content';
     gap: 5px;
@@ -26,7 +40,47 @@ header {
 
 .sidebar {
     min-height: 100vh;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
     grid-area: sidebar;
+}
+
+.page-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.page-logo::before {
+    content: url(./assets/icons/view-dashboard.png);
+}
+
+.page-logo:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    display: grid;
+    row-gap: 20px;
+    padding-left: 12px;
+    list-style-type: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+li.nav-link {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 main.content {
