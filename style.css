@@ -90,7 +90,7 @@ header {
     grid-area: header;
     display: grid;
     gap: 10px 20px;
-    grid-template-columns: minmax(345px, 2fr) minmax(140px, 0.5fr) minmax(140px, auto);
+    grid-template-columns: 5fr 0.8fr auto;
 }
 
 .search-bar-wrapper {
@@ -113,7 +113,7 @@ input[type='search'] {
     border-radius: 20px;
     height: 38px;
     min-width: 110px;
-    width: 90%;
+    width: 95%;
     border: none;
     padding: 0 20px;
     background-color: #e2e8f0;
@@ -172,7 +172,7 @@ input[type='search']:focus {
 .header-btns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
+    column-gap: 20px;
     align-items: center;
     grid-column: 2 / 4;
 }
@@ -180,7 +180,7 @@ input[type='search']:focus {
 button[type='button'] {
     appearance: none;
     border: 0;
-    border-radius: 20px;
+    border-radius: 18px;
     background-color: var(--secondary-color);
     color: white;
     height: 40px;
@@ -249,17 +249,13 @@ main.content p:not(.trending-user-name) {
 .other-card {
     background-color: white;
     box-shadow: var(--card-shadow);
-    padding: 10px 30px 25px;
+    padding: 15px 30px 20px;
 }
 
 /* Announcements card paragraph text */
 h5+p {
     margin: 0 5px 15px 0;
     font-size: 14px;
-}
-
-.trending-card {
-    padding-top: 30px;
 }
 
 .trending-user {
