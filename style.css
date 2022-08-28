@@ -329,12 +329,19 @@ main.content p:not(.trending-user-name) {
 .other-card {
     background-color: white;
     box-shadow: var(--card-shadow);
+}
+
+.announcements-card {
     padding: 20px 30px 15px;
 }
 
 /* Announcements card paragraph text */
 .announcements-para {
     font-size: 14px;
+}
+
+.trending-card {
+    padding: 20px 30px 15px;
 }
 
 .trending-user {
