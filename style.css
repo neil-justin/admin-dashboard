@@ -170,12 +170,15 @@ header {
     padding: 15px 40px;
     grid-area: header;
     display: grid;
-    gap: 10px 20px;
     grid-template-columns: 5fr 0.8fr auto;
+    grid-template-areas: 'search-bar notification-icon account-user'
+        'user-greetings user-greetings header-btns';
+    gap: 10px 20px;
 }
 
 .search-bar-wrapper {
     display: grid;
+    grid-area: search-bar;
     column-gap: 15px;
     align-items: center;
     grid-template-columns: 28px 1fr;
@@ -208,10 +211,12 @@ input[type='search']:focus {
     display: flex;
     align-items: center;
     justify-content: end;
+    grid-area: notification-icon;
 }
 
 .account-user {
     display: grid;
+    grid-area: account-user;
     grid-template-columns: 49px auto;
     justify-content: end;
     column-gap: 10px;
@@ -227,6 +232,7 @@ input[type='search']:focus {
 .user-greetings {
     display: flex;
     margin-left: -10px;
+    grid-area: user-greetings;
 }
 
 .big-profile {
@@ -252,6 +258,7 @@ input[type='search']:focus {
 
 .header-btns {
     display: grid;
+    grid-area: header-btns;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     align-items: center;
@@ -273,6 +280,7 @@ main.content {
     grid-template-columns: 2fr 0.8fr;
     grid-template-rows: 1fr auto;
     gap: 15px;
+    grid-area: main-content;
     padding: 10px 20px 40px;
 }
 
