@@ -34,10 +34,6 @@ body {
     gap: 5px;
 }
 
-body>* {
-    border: 2px solid yellowgreen;
-}
-
 .sidebar {
     min-height: 100vh;
     padding: 20px;
@@ -47,6 +43,87 @@ body>* {
     flex-direction: column;
     row-gap: 25px;
     grid-area: sidebar;
+}
+
+li#home::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/home.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#profile::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/profile.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#messages::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/messages.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#history::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/history.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#tasks::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/tasks.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#communities::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/communities.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#settings::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/settings.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#support::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/support.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
+}
+
+li#privacy::before {
+    display: inline-block;
+    content: "";
+    background: url(./assets/icons/privacy.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 28px;
+    height: 28px;
 }
 
 .page-logo {
@@ -74,13 +151,14 @@ nav ul {
 }
 
 nav a {
+    width: fit-content;
     color: white;
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
 }
 
 li.nav-link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
     font-size: 16px;
     font-weight: bold;
 }
